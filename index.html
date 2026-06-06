@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamonaviy IT Platforma | Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-3xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">TECH-NO.</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-blue-600 transition">Asosiy</a>
+                    <a href="#features" class="hover:text-blue-600 transition">Xizmatlar</a>
+                    <a href="#stats" class="hover:text-blue-600 transition">Natijalar</a>
+                    <a href="#pricing" class="hover:text-blue-600 transition">Narxlar</a>
+                    <a href="#footer" class="hover:text-blue-600 transition">Aloqa</a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="px-5 py-2.5 text-blue-600 font-semibold">Kirish</button>
+                    <button class="px-6 py-2.5 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 shadow-lg shadow-blue-200 transition">Boshlash</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-slate-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-6 space-y-4">
+            <a href="#home" class="block text-lg font-medium">Asosiy</a>
+            <a href="#features" class="block text-lg font-medium">Xizmatlar</a>
+            <a href="#pricing" class="block text-lg font-medium">Narxlar</a>
+            <button class="w-full py-3 bg-blue-600 text-white rounded-xl">Boshlash</button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8 text-center lg:text-left">
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight text-slate-900">
+                    Biznesingizni <span class="text-blue-600 underline">Raqamlashtiring</span>
+                </h1>
+                <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                    Bizning platforma yordamida jarayonlarni avtomatlashtiring, samaradorlikni oshiring va mijozlaringizga yuqori sifatli xizmat ko'rsating.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                    <a href="#" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold flex items-center justify-center hover:bg-slate-800 transition">
+                        Bepul sinab ko'rish <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#" class="px-8 py-4 border border-slate-300 rounded-2xl font-bold flex items-center justify-center hover:bg-slate-100 transition">
+                        Demoni ko'rish
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-10 -left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse"></div>
+                <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse delay-700"></div>
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426" alt="Dashboard" class="relative rounded-3xl shadow-2xl border border-slate-200">
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section id="stats" class="py-20 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-white text-center">
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold mb-2">10K+</div>
+                    <div class="text-blue-100">Mijozlar</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold mb-2">99.9%</div>
+                    <div class="text-blue-100">Uptime</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold mb-2">24/7</div>
+                    <div class="text-blue-100">Yordam</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold mb-2">150+</div>
+                    <div class="text-blue-100">Integratsiyalar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-blue-600 font-bold tracking-widest uppercase mb-3">Imkoniyatlar</h2>
+            <p class="text-4xl font-bold text-slate-900">Nima uchun bizni tanlashadi?</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:shadow-xl transition duration-300 group">
+                <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:rotate-12 transition">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Tezkor Tezlik</h3>
+                <p class="text-slate-600">Bizning serverlarimiz dunyo bo'ylab eng tezkor ulanishni ta'minlaydi.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:shadow-xl transition duration-300 group">
+                <div class="w-14 h-14 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:rotate-12 transition">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Maksimal Xavfsizlik</h3>
+                <p class="text-slate-600">Ma'lumotlaringiz 256-bitli shifrlash bilan to'liq himoyalangan.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:shadow-xl transition duration-300 group">
+                <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:rotate-12 transition">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Kengaytirilgan Analitika</h3>
+                <p class="text-slate-600">Barcha ma'lumotlarni real vaqt rejimida grafiklar orqali kuzatib boring.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="py-24 px-4 bg-slate-50">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Sizga mos keladigan tarif</h2>
+            <p class="text-slate-600">Yashirin to'lovlar yo'q, istalgan vaqtda bekor qiling.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+            <!-- Basic Plan -->
+            <div class="bg-white p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h3 class="text-xl font-bold mb-2">Boshlang'ich</h3>
+                <div class="text-4xl font-extrabold mb-6">$29<span class="text-lg text-slate-400 font-normal">/oy</span></div>
+                <ul class="space-y-4 mb-8 text-slate-600">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 5 ta foydalanuvchi</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 10GB xotira</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Email qo'llab-quvvatlash</li>
+                </ul>
+                <button class="w-full py-4 border-2 border-blue-600 text-blue-600 font-bold rounded-2xl hover:bg-blue-600 hover:text-white transition">Tanlash</button>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="bg-slate-900 p-10 rounded-3xl border border-blue-500 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 rounded-bl-xl text-sm font-bold uppercase tracking-tighter">Mashhur</div>
+                <h3 class="text-xl font-bold mb-2 text-white">Professional</h3>
+                <div class="text-4xl font-extrabold mb-6 text-white">$99<span class="text-lg text-slate-400 font-normal">/oy</span></div>
+                <ul class="space-y-4 mb-8 text-slate-300">
+                    <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> Cheksiz foydalanuvchi</li>
+                    <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> 100GB xotira</li>
+                    <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> 24/7 VIP yordam</li>
+                    <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> Maxsus API ulanish</li>
+                </ul>
+                <button class="w-full py-4 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-700 transition">Hozir boshlash</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-white border-t border-slate-200 pt-20 pb-10 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-2 md:col-span-1">
+                <span class="text-2xl font-bold text-blue-600">TECH-NO.</span>
+                <p class="mt-4 text-slate-500">Kelejak texnologiyalarini bugun quramiz. Biz bilan birga bo'ling.</p>
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold mb-6">Mahsulot</h4>
+                <ul class="space-y-4 text-slate-500">
+                    <li><a href="#" class="hover:text-blue-600">Xususiyatlar</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Xavfsizlik</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Integratsiyalar</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6">Kompaniya</h4>
+                <ul class="space-y-4 text-slate-500">
+                    <li><a href="#" class="hover:text-blue-600">Biz haqimizda</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Vakansiyalar</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6">Qo'llab-quvvatlash</h4>
+                <ul class="space-y-4 text-slate-500">
+                    <li><a href="#" class="hover:text-blue-600">Yordam markazi</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Dokumentatsiya</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Aloqa</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-slate-100 pt-8 text-center text-slate-400 text-sm">
+            <p>&copy; 2024 TECH-NO. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
